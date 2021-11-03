@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import './App.scss';
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import Map from "./components/Map/Map";
+import LocationMap from "./components/LocationMap/LocationMap";
 import { getIpInfo } from './services/ip.service';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
   return (
     <div>
       <Header submittedSearch={getIp}/>
-      <Map />
+      <LocationMap />
       <Footer />
     </div>
   );
