@@ -1,6 +1,8 @@
 import React from "react";
-import InfoContainer from "./InfoContainer";
-import SearchBar from "./SearchBar";
+import './Header.scss';
+import InfoContainer from "../InfoContainer/InfoContainer";
+import SearchBar from "../SearchBar/SearchBar";
+
 
 const Header = (props) => {
   const { submittedSearch } = props;

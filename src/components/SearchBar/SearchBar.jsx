@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import './SearchBar.scss';
 
 const SearchBar = (props) => {
   const { submittedSearch } = props;
   const [searchedIp, setSearchedIp] = useState('');
-  // const [submittedSearch, setSubmittedSearch] = useState('');
 
   const handleChange = (e) => {
     setSearchedIp(e.target.value)

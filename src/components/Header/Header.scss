@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.header {
+  padding-bottom: 7rem;
+  position: relative;
+  background-image: url('../../assets/images/pattern-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    color: $white;
+  }
+}

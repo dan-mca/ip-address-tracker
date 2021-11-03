@@ -1,0 +1,12 @@
+@import '../../variables.scss';
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 25px 15px;
+  width: 75vw;
+  position: absolute;
+  top: 70%;
+}

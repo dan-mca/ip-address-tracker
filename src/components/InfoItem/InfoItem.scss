@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.infoItem {
+  width: 25%;
+  padding: 0 2rem;
+  
+
+  h5 {
+    color: $dark-gray;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0 0 1rem;
+  }
+
+  h3 {
+    color: $very-dark-gray;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+  }
+}

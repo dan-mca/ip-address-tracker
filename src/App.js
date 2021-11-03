@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Map from "./components/Map";
+import './App.scss';
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Map from "./components/Map/Map";
 import { getIpInfo } from './services/ip.service';
 
 function App() {
