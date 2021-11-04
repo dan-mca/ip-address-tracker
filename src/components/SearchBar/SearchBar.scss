@@ -2,6 +2,10 @@
 
 .form {
 
+  @media only screen and (max-width: 375px) {
+    width: 100%
+  }
+
   &__input {
     background-color: $white;
     font-size: 18px;
@@ -11,11 +15,25 @@
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: none;
-  }
 
-  &::placeholder {
-    color: $dark-gray;
+    @media only screen and (max-width: 375px) {
+      width: 69%
+    }
+
+    &:focus, &:focus-visible {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $dark-gray;
+
+      @media only screen and (max-width: 375px) {
+        font-size: 16px;
+      }
+    }
+
   }
+  
 
   &__button {
     background-color: #2b2b2b;
@@ -25,5 +43,6 @@
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    cursor: pointer;
   }
 }

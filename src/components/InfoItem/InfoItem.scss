@@ -3,13 +3,24 @@
 .infoItem {
   width: 25%;
   padding: 0 2rem;
-  
 
+  @media only screen and (max-width: 375px) {
+    width: 75vw;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
   h5 {
     color: $dark-gray;
     font-weight: 500;
     letter-spacing: 2px;
     margin: 0 0 1rem;
+
+    @media only screen and (max-width: 375px) {
+      font-size: 10px;
+      margin-bottom: 2px;
+    }
   }
 
   h3 {
@@ -17,5 +28,9 @@
     font-weight: 500;
     font-size: 24px;
     margin: 0;
+
+    @media only screen and (max-width: 375px) {
+      font-size: 20px;
+    }
   }
 }

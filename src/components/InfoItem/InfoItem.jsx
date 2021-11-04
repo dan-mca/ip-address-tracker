@@ -7,7 +7,7 @@ const InfoItem = (props) => {
   return (
     <div className="infoItem">
       <h5>{title.toUpperCase()}</h5>
-      <h3>{value}</h3>
+      <h3>{value ? value : '-'}</h3>
     </div>
   );
 };

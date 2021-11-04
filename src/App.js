@@ -4,7 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import LocationMap from "./components/LocationMap/LocationMap";
 import { getIpInfo } from './services/ip.service';
-// import { ipData } from "./ipdata";
+
 
 function App() {
   const [ ipInput, setIpInput ] = useState('');

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './SearchBar.scss';
+import arrow from '../../assets/images/icon-arrow.svg'
 
 const SearchBar = (props) => {
   const { submittedSearch } = props;
@@ -23,7 +24,7 @@ const SearchBar = (props) => {
         aria-label="input field"
         onChange={handleChange}
       />
-      <button className="form__button" aria-label="submit" >></button>
+      <button className="form__button" aria-label="submit" ><img src={arrow} /></button>
     </form>
   );
 };

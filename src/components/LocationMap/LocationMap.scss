@@ -1,6 +1,11 @@
 @import '../../variables.scss';
 
 .map {
-  height: 62vh;
+  height: 65vh;
   background-color: gray;
+
+  @media only screen and (max-width: 375px) {
+    height: 69vh;
+  }
 }
+

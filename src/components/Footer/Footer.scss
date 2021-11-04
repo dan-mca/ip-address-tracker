@@ -1,4 +1,10 @@
 .attribution {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 375px) {
+    font-size: 12px;
+    align-items: center;
+  }
 }
