@@ -4,7 +4,7 @@
   width: 25%;
   padding: 0 2rem;
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 768px) {
     width: 75vw;
     padding: 0;
     text-align: center;
@@ -17,7 +17,7 @@
     letter-spacing: 2px;
     margin: 0 0 1rem;
 
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 768px) {
       font-size: 10px;
       margin-bottom: 2px;
     }
@@ -29,7 +29,7 @@
     font-size: 24px;
     margin: 0;
 
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 768px) {
       font-size: 20px;
     }
   }
