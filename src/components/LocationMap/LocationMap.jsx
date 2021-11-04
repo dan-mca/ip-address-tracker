@@ -1,12 +1,16 @@
 import React from "react";
 import './LocationMap.scss';
-import { Map, Marker } from "pigeon-maps";
+import { Map, Marker, ZoomControl } from "pigeon-maps";
 
-const LocationMap = () => {
+const LocationMap = (props) => {
+  const {center} = props;
+
+  const mapCenter = center ? center.split(',').map(Number) : [51.507359, -0.136439]
   return (
     <main className="map">
-      <Map height={520} defaultCenter={[50.879, 4.6997]} defaultZoom={11}>
-        <Marker width={50} anchor={[50.879, 4.6997]} />
+      <Map center={mapCenter} defaultZoom={12} >
+        <ZoomControl />
+        <Marker width={50} anchor={mapCenter} color={'blue'} />
       </Map>
     </main>
   );

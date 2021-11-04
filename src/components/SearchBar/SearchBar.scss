@@ -6,7 +6,7 @@
     background-color: $white;
     font-size: 18px;
     color: $very-dark-gray;
-    padding: 1.25rem;
+    padding: 1rem 1.25rem;
     width: 30vw;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -15,5 +15,15 @@
 
   &::placeholder {
     color: $dark-gray;
+  }
+
+  &__button {
+    background-color: #2b2b2b;
+    border: none;
+    font-size: 18px;
+    padding: 1rem 1.25rem;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 }

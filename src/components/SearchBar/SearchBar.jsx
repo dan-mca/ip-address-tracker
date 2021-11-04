@@ -23,9 +23,7 @@ const SearchBar = (props) => {
         aria-label="input field"
         onChange={handleChange}
       />
-      <button className="form__button" aria-label="submit" >
-        Search
-      </button>
+      <button className="form__button" aria-label="submit" >></button>
     </form>
   );
 };
