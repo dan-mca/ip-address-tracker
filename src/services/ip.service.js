@@ -6,9 +6,9 @@ export const getIpInfo = async (ipAddress) => {
   const API_TOKEN = "\?token=b3433d99aacf4a"
   try {
     let response = await fetch(API_URL + ipAddress + API_TOKEN)
-    if(!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+    // if(!response.ok) {
+    //   throw new Error(`HTTP error! status: ${response.status}`);
+    // }
     let data = await response.json();
     return data;
   } catch (error) {

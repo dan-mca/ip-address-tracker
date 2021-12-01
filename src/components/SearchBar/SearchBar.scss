@@ -19,11 +19,11 @@
     border: none;
 
     @media only screen and (max-width: 375px) {
-      width: 69%
+      width: 75%!important;
     }
 
     @media only screen and (max-width: 768px) {
-      width: 45%
+      width: 45%;
     }
 
     &:focus, &:focus-visible {

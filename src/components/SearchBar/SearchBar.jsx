@@ -20,7 +20,7 @@ const SearchBar = (props) => {
       <input
         type="text"
         className="form__input"
-        placeholder="Search for any IP address or domain"
+        placeholder="Search for any IP address"
         aria-label="input field"
         onChange={handleChange}
       />

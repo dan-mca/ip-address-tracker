@@ -16,6 +16,7 @@ function App() {
     const clientIp = await data.ip;
     setIpInput(clientIp);
   }
+  console.log(ipData)
 
   useEffect(() => {
     getClientIp();
@@ -26,21 +27,22 @@ function App() {
 
   useEffect(() => {
     getIpInfo(ipInput)
-    .then(data => setIpData(data))
+    .then(data => {
+      if(data.status === 404) {
+        alert("A valid IP address doesn't appear to have been entered. Please check and try again.")
+      } else {setIpData(data)}
+    })
     .catch(reason => console.log(reason.message))
   }, [ipInput])
   
-  const getIp = (ipAddress) => {
-    setIpInput(ipAddress)
-  }
-
+  const getIp = (ipAddress) => ipAddress ? setIpInput(ipAddress) : getClientIp();
   
   return (
-    <div>
+    <section className="app">
       <Header submittedSearch={getIp} data={ipData}/>
-      <LocationMap center={ipData.loc}/>
+      <LocationMap center={ipData ? ipData.loc : ''}/>
       <Footer />
-    </div>
+    </section>
   );
 }
 
