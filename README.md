@@ -6,6 +6,7 @@
 
 This is an IP address tracker app that was created based on a challenge from [Frontend Mentor](https://www.frontendmentor.io)
 
+The app can be accessed [here](https://dan-mca.github.io/ip-address-tracker/)
 
 ## The challenge
 
