@@ -1,6 +1,6 @@
 # IP address tracker
 
-![Design preview for the IP address tracker coding challenge](./public/assets/design/desktop-preview.jpg)
+![Design preview for the IP address tracker coding challenge](./src/assets/images/desktop-preview.jpeg)
 
 ## Welcome! 👋
 
