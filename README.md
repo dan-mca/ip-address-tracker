@@ -32,6 +32,7 @@ I wanted to practice my React skills and working with APIs along with implementi
 ## Built With
 - React
 - SASS
+- React Testing Library - [example test](https://github.com/dan-mca/ip-address-tracker/blob/master/src/components/InfoContainer/__tests__/InfoContainer.spec.js)
 
 ---
 
